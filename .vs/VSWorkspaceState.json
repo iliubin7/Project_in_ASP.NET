@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WebApplication1",
-    "\\WebApplication1\\WebApplication1"
+    "\\WebApplicationGames-master",
+    "\\WebApplicationGames-master\\WebApplication1",
+    "\\WebApplicationGames-master\\WebApplication1\\Data",
+    "\\WebApplicationGames-master\\WebApplication1\\Migrations",
+    "\\WebApplicationGames-master\\WebApplication1\\Models"
   ],
-  "SelectedNode": "\\WebApplication1\\WebApplication1.sln",
+  "SelectedNode": "\\WebApplicationGames-master\\WebApplication1.sln",
   "PreviewInSolutionExplorer": false
 }
