@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -9,38 +6,37 @@ using Microsoft.EntityFrameworkCore;
 using WebApplication1.Data;
 using WebApplication1.Models;
 
-namespace WebApplication1.Pages.Games
+namespace WebApplication1.Pages.Alcohols
 {
     public class EditModel : PageModel
     {
-        private readonly WebApplication1.Data.WebApplication1Context _context;
+        private readonly WebApplication1Context _context;
 
-        public EditModel(WebApplication1.Data.WebApplication1Context context)
+        public EditModel(WebApplication1Context context)
         {
             _context = context;
         }
 
         [BindProperty]
-        public Game Game { get; set; } = default!;
+        public Alcohol Alcohol { get; set; }
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
-            if (id == null || _context.Game == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var game =  await _context.Game.FirstOrDefaultAsync(m => m.ID == id);
-            if (game == null)
+            Alcohol = await _context.Alcohol.FirstOrDefaultAsync(m => m.ID == id);
+
+            if (Alcohol == null)
             {
                 return NotFound();
             }
-            Game = game;
+
             return Page();
         }
 
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see https://aka.ms/RazorPagesCRUD.
         public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
@@ -48,7 +44,7 @@ namespace WebApplication1.Pages.Games
                 return Page();
             }
 
-            _context.Attach(Game).State = EntityState.Modified;
+            _context.Attach(Alcohol).State = EntityState.Modified;
 
             try
             {
@@ -56,7 +52,7 @@ namespace WebApplication1.Pages.Games
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!GameExists(Game.ID))
+                if (!AlcoholExists(Alcohol.ID))
                 {
                     return NotFound();
                 }
@@ -69,9 +65,9 @@ namespace WebApplication1.Pages.Games
             return RedirectToPage("./Index");
         }
 
-        private bool GameExists(int id)
+        private bool AlcoholExists(int id)
         {
-          return (_context.Game?.Any(e => e.ID == id)).GetValueOrDefault();
+            return _context.Alcohol.Any(e => e.ID == id);
         }
     }
 }

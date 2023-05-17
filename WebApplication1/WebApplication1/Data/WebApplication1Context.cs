@@ -14,6 +14,14 @@ namespace WebApplication1.Data
         {
         }
 
-        public DbSet<WebApplication1.Models.Game> Game { get; set; } = default!;
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Alcohol>()
+                .Property(a => a.Price)
+                .HasColumnType("decimal(18,2)");
+        }
+
+
+        public DbSet<WebApplication1.Models.Alcohol> Alcohol { get; set; } = default!;
     }
 }
