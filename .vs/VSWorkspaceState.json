@@ -1,12 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WebApplicationGames-master",
-    "\\WebApplicationGames-master\\WebApplication1",
-    "\\WebApplicationGames-master\\WebApplication1\\Data",
-    "\\WebApplicationGames-master\\WebApplication1\\Migrations",
-    "\\WebApplicationGames-master\\WebApplication1\\Models"
+    "\\WebApplication1",
+    "\\WebApplication1\\WebApplication1",
+    "\\WebApplication1\\WebApplication1\\Data",
+    "\\WebApplication1\\WebApplication1\\Pages",
+    "\\WebApplication1\\WebApplication1\\Properties",
+    "\\WebApplication1\\WebApplication1\\wwwroot",
+    "\\WebApplication1\\WebApplication1\\wwwroot\\css"
   ],
-  "SelectedNode": "\\WebApplicationGames-master\\WebApplication1.sln",
+  "SelectedNode": "\\WebApplication1\\WebApplication1\\Pages\\Shared",
   "PreviewInSolutionExplorer": false
 }

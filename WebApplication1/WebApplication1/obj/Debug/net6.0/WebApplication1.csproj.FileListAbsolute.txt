@@ -855,3 +855,6 @@ C:\Users\kacpe\Source\Repos\Project_in_ASP.POPRAWNE\WebApplication1\WebApplicati
 C:\Users\kacpe\Source\Repos\Project_in_ASP.POPRAWNE\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.pdb
 C:\Users\kacpe\Source\Repos\Project_in_ASP.POPRAWNE\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.genruntimeconfig.cache
 C:\Users\kacpe\Source\Repos\Project_in_ASP.POPRAWNE\WebApplication1\WebApplication1\obj\Debug\net6.0\ref\WebApplication1.dll
+C:\Users\elias\учёба AiR\semestr 6\TI .NET i Java\TheFourthProject\Project_in_ASP.NET\WebApplication1\WebApplication1\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\elias\учёба AiR\semestr 6\TI .NET i Java\TheFourthProject\Project_in_ASP.NET\WebApplication1\WebApplication1\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\elias\учёба AiR\semestr 6\TI .NET i Java\TheFourthProject\Project_in_ASP.NET\WebApplication1\WebApplication1\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
