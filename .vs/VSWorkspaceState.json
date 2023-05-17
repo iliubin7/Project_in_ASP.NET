@@ -5,10 +5,11 @@
     "\\WebApplication1\\WebApplication1",
     "\\WebApplication1\\WebApplication1\\Data",
     "\\WebApplication1\\WebApplication1\\Pages",
+    "\\WebApplication1\\WebApplication1\\Pages\\Alcohols",
     "\\WebApplication1\\WebApplication1\\Properties",
     "\\WebApplication1\\WebApplication1\\wwwroot",
     "\\WebApplication1\\WebApplication1\\wwwroot\\css"
   ],
-  "SelectedNode": "\\WebApplication1\\WebApplication1\\Pages\\Shared",
+  "SelectedNode": "\\WebApplication1\\WebApplication1\\Pages\\Alcohols\\Create.cshtml.cs",
   "PreviewInSolutionExplorer": false
 }
