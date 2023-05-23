@@ -1,8 +1,5 @@
 html {
     font-size: 14px;
-    background-image: url('/image/tlo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
     position: relative;
     min-height: 100%;
 }
@@ -16,6 +13,9 @@ html {
 body {
     color: midnightblue;
     margin-bottom: 60px;
+    background-image: url('/image/tlo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 footer {
