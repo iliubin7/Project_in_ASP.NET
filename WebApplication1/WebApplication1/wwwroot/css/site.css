@@ -1,6 +1,5 @@
 html {
     font-size: 14px;
-    background-color: #ff7f50;
 }
 
 @media (min-width: 768px) {
@@ -9,13 +8,8 @@ html {
     }
 }
 
-html {
-    position: relative;
-    min-height: 100%;
-}
-
 body {
-    margin-bottom: 60px;
-    font-family: Arial, sans-serif;
-    color: #333;
+    background-image: url('/image/tlo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }

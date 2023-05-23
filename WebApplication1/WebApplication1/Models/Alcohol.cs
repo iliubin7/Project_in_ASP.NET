@@ -30,5 +30,6 @@ namespace WebApplication1.Models
         public float bid { get; set; } // kurs kupna {tabela C}
         public float ask { get; set; } // kurs sprzedaży {tabela C}
         public string effectiveDate { get; set; }  // data publikacji 
+
     }
 }
