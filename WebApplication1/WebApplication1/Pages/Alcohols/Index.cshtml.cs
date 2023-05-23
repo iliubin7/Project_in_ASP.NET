@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using WebApplication1.Data;
 using WebApplication1.Models;
 
@@ -30,6 +31,11 @@ namespace WebApplication1.Pages.Alcohols
             ViewData["CurrencyRateCHF"] = currencyRateCHF;
             string currencyRateGBP = await ShowCurRate("GBP");
             ViewData["CurrencyRateGBP"] = currencyRateGBP;
+            string weather = await downloadWeather("Wroclaw");
+            ViewData["WeatherFarenheight"] = weather;
+            double w = (Convert.ToDouble(weather)-32)*0.55;
+            string weath = string.Format("{0:0.#}", w);
+            ViewData["WeatherCelsi"] = weath;
 
             Alcohol = await _context.Alcohol.ToListAsync();
 
@@ -52,6 +58,16 @@ namespace WebApplication1.Pages.Alcohols
             string m = string.Empty;
             m = cur.rates[0].mid.ToString();
             return m;
+        }
+          
+        private async Task<string> downloadWeather(string cityName)
+        {
+            HttpClient client = new HttpClient();
+            var apiKey = "77ddc5807aff734585b8bee62e50275b";
+            var openWeatherURL = $"https://api.openweathermap.org/data/2.5/weather?q={cityName}&appid={apiKey}&units=imperial";
+            var Report = client.GetStringAsync(openWeatherURL).Result;
+            var Temp = JObject.Parse(Report)["main"]["temp"].ToString();
+            return Temp;
         }
     }
 }
