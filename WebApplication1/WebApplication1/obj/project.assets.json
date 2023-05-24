@@ -10622,19 +10622,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kacpe\\.nuget\\packages\\": {}
+    "C:\\Users\\elias\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kacpe\\Source\\Repos\\Project_in_ASP.NET_KONIEC_NO\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\elias\\учёба AiR\\semestr 6\\TI .NET i Java\\TheFourthProject\\Project_in_ASP.NET\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\kacpe\\Source\\Repos\\Project_in_ASP.NET_KONIEC_NO\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
-      "packagesPath": "C:\\Users\\kacpe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kacpe\\Source\\Repos\\Project_in_ASP.NET_KONIEC_NO\\WebApplication1\\WebApplication1\\obj\\",
+      "projectPath": "C:\\Users\\elias\\учёба AiR\\semestr 6\\TI .NET i Java\\TheFourthProject\\Project_in_ASP.NET\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "packagesPath": "C:\\Users\\elias\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\elias\\учёба AiR\\semestr 6\\TI .NET i Java\\TheFourthProject\\Project_in_ASP.NET\\WebApplication1\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\kacpe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\elias\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10708,7 +10713,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.408\\RuntimeIdentifierGraph.json"
       }
     }
   }

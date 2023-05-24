@@ -35,7 +35,7 @@ namespace WebApplication1.Pages.Alcohols
             string weather = await downloadWeather("Wroclaw");
             ViewData["WeatherFarenheight"] = weather;
             double w = (Convert.ToDouble(weather)-32)*0.55;
-            string weath = string.Format("{0:0.#}", w);
+            string weath = string.Format("{0:0}", w);
             ViewData["WeatherCelsi"] = weath;
 
             Alcohol = await _context.Alcohol.ToListAsync();
