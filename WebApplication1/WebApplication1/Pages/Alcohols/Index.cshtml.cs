@@ -31,6 +31,7 @@ namespace WebApplication1.Pages.Alcohols
             ViewData["CurrencyRateCHF"] = currencyRateCHF;
             string currencyRateGBP = await ShowCurRate("GBP");
             ViewData["CurrencyRateGBP"] = currencyRateGBP;
+
             string weather = await downloadWeather("Wroclaw");
             ViewData["WeatherFarenheight"] = weather;
             double w = (Convert.ToDouble(weather)-32)*0.55;
